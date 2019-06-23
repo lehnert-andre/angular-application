@@ -19,10 +19,10 @@
       "dom"
     ],
     "paths": {
-      "exxcellent-components": [
+      "@exxcellent/components": [
         "dist/exxcellent-components"
       ],
-      "exxcellent-components/*": [
+      "@exxcellent/components/*": [
         "dist/exxcellent-components/*"
       ]
     }
