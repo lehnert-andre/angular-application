@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-exxcellent-components',
+  selector: 'exx-exxcellent-components',
   template: `
     <p>
       exxcellent-components works!
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class ExxcellentComponentsComponent implements OnInit {
+export class ExxcellentComponent implements OnInit {
 
   constructor() { }
 

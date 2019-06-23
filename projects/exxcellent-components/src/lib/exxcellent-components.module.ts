@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { ExxcellentComponentsComponent } from './exxcellent-components.component';
+import { ExxcellentComponent } from './exxcellent-components.component';
 
 @NgModule({
-  declarations: [ExxcellentComponentsComponent],
+  declarations: [ExxcellentComponent],
   imports: [
   ],
-  exports: [ExxcellentComponentsComponent]
+  exports: [ExxcellentComponent]
 })
 export class ExxcellentComponentsModule { }
