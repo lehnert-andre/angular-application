@@ -95,29 +95,39 @@
             "browserTarget": "angular-application:build"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "exxcellent-components": {
+      "projectType": "library",
+      "root": "projects/exxcellent-components",
+      "sourceRoot": "projects/exxcellent-components/src",
+      "prefix": "exx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/exxcellent-components/tsconfig.lib.json",
+            "project": "projects/exxcellent-components/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/exxcellent-components/tsconfig.lib.json",
+              "projects/exxcellent-components/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

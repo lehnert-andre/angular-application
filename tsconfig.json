@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "exxcellent-components": [
+        "dist/exxcellent-components"
+      ],
+      "exxcellent-components/*": [
+        "dist/exxcellent-components/*"
+      ]
+    }
   }
 }
