@@ -4,17 +4,23 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Welcome, Button } from '@storybook/angular/demo';
 
-import { ExxcellentComponent } from '@exxcellent/components';
+import {ButtonComponent, ExxcellentComponent} from '@exxcellent/components';
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   component: Welcome,
   props: {},
 }));
 
-storiesOf('Exxcellent', module).add('Example', () => ({
-  component: ExxcellentComponent,
-  props: {},
-}));
+storiesOf('Exxcellent', module)
+    .add('Example', () => ({
+      component: ExxcellentComponent,
+      props: {},
+    }))
+    .add('Button', () => ({
+        component: ButtonComponent,
+        props: {},
+        onClick: action('This was clicked OMG'),
+    }));
 
 
 storiesOf('Button', module)

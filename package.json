@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run build:libs && ng serve",
+    "build": "npm run build:libs && ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "storybook": "start-storybook -p 4999",
-    "build-storybook": "build-storybook"
+    "build:libs": "ng build exxcellent-components",
+    "storybook": "npm run build:libs && start-storybook -p 4999",
+    "build-storybook": "npm run build:libs && build-storybook"
   },
   "private": true,
   "dependencies": {
